@@ -1,6 +1,8 @@
-print("Hello from Cohort 34 and learning how to program python")
-x = 2.5
-y= 5
+# save this as app.py
+from flask import Flask
 
-val= y / x
-print(val)
+app = Flask(__name__)
+
+@app.route("/")
+def hello():
+    return "Hello, from cohort 33!"
